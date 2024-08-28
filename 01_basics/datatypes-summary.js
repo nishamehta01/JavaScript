@@ -21,3 +21,25 @@ const myfunction = function(){
 
 console.log(typeof hero)
 
+//------------------------Memory-------------------------------//
+
+// stack (primitive), heap (non-primitive)
+
+let myName = "Nisha"
+let anotherName = myName
+anotherName = "Mehta"
+
+console.log(myName)
+console.log(anotherName)
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email  = "nis@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email)
